@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Caucasian+Albanian&display=swap" rel="stylesheet">
   <title>Landing Page</title>
 </head>
 <body>
   <header>
-    <div>
+    <div class="logo-area">
       <a href="/index.html">
-        <img src="logo.png" alt="logo" width="60">
+        <img src="logo.png" alt="logo" width="60" id='logo'>
       </a>
       <p>Build for Africa</p>
     </div>
 
     <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="nav">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/programs.html">Programs</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,103 +31,119 @@
   <main>
     <!-- hero section -->
     <section id="hero-section">
-      <h1 id="hero-title">Don't just learn to code. <br> Launch your Tech Startup</h1>
-      <p>
-        Master the "African Stack" (M-Pesa, USSD, WhatsApp) and build production-ready systems. Join McTaba Labs to move from concept to code to commerce in 26 weeks.
-      </p>
-      <a href="#">Fullstack Marathon</a>
-      <a href="#">Highschool Graduates Program</a>
-      <ul>
-        <li>Job-ready skills</li>
-        <li>Real projects</li>
-        <li>Career support</li>
-      </ul>
+        <div class="hero-left">
+          <h1 id="hero-title">Don't just learn to code. <br><span id="highlight">Launch your Tech Startup</span></h1>
+          <p class="hero-para">
+            Master the "African Stack" (M-Pesa, USSD, WhatsApp) and build production-ready systems. Join McTaba Labs to move from concept to code to commerce in 26 weeks.
+          </p>
+          <button>
+            <a href="#">Fullstack Marathon</a>
+          </button>
+          <button>
+            <a href="#">Highschool Graduates Program</a>
+          </button>
+          
+          <ul class="hero-list">
+            <li>Job-ready skills</li>
+            <li>Real projects</li>
+            <li>Career support</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <img src="logo.png" alt="" class="hero-image">
+        </div>
     </section>
 
+    <!-- section I -->
     <section id="section-1">
-      <h2>The Blueprint for Building an African Tech Startup</h2>
-      <p>
-        Our proven 5-step engineering marathon is designed to take you from a motivated beginner to a production-ready startup founder or lead dev.
-      </p>
-
-      <article id="step-1">
-        <h3>Apply & Interview</h3>
-        <p>
-          Submit your application and complete a brief interview to assess your motivation and learning readiness.
+      <div class="section-head">
+        <h2>The Blueprint for Building an African Tech Startup</h2>
+        <p class="hero-para">
+          Our proven 5-step engineering marathon is designed to take you from a motivated beginner to a production-ready startup founder or lead dev.
         </p>
-        <a href="#">Learn more</a>
-      </article>
-
-      <article id="step-2">
-        <h3>Master Foundations</h3>
-        <p>
-          Learn HTML, CSS, JavaScript, and Git through hands-on projects and daily coding challenges.
-        </p>
-        <a href="#">Learn more</a>
-      </article>
-
-      <article id="step-3">
-        <h3>Build your Portfolio</h3>
-        <p>
-          Create 6-8 real-world projects including full-stack applications that showcase your skills to employers.
-        </p>
-        <a href="#">Learn more</a>
-      </article>
+      </div>
       
-      <article id="step-4">
-        <h3>Career Preparation</h3>
-        <p>
-          Polish your resume, practice technical interviews, and connect with our network of hiring partners.
-        </p>
-        <a href="#">Learn more</a>
-      </article>
+      <div class="article-room">  
+        <article id="step-1">
+          <h3>Apply & Interview</h3>
+          <p>
+            Submit your application and complete a brief interview to assess your motivation and learning readiness.
+          </p>
+          <a href="#">Learn more</a>
+        </article>
 
-      <article id="step-5">
-        <h3>Land Your First Role</h3>
-        <p>
-          Get matched with opportunities at startups and tech companies across Kenya, East Africa, and beyond.
-        </p>
-        <a href="#">Learn more</a>
-      </article>
+        <article id="step-2">
+          <h3>Master Foundations</h3>
+          <p>
+            Learn HTML, CSS, JavaScript, and Git through hands-on projects and daily coding challenges.
+          </p>
+          <a href="#">Learn more</a>
+        </article>
+
+        <article id="step-3">
+          <h3>Build your Portfolio</h3>
+          <p>
+            Create 6-8 real-world projects including full-stack applications that showcase your skills to employers.
+          </p>
+          <a href="#">Learn more</a>
+        </article>
+        
+        <article id="step-4">
+          <h3>Career Preparation</h3>
+          <p>
+            Polish your resume, practice technical interviews, and connect with our network of hiring partners.
+          </p>
+          <a href="#">Learn more</a>
+        </article>
+
+        <article id="step-5">
+          <h3>Land Your First Role</h3>
+          <p>
+            Get matched with opportunities at startups and tech companies across Kenya, East Africa, and beyond.
+          </p>
+          <a href="#">Learn more</a>
+        </article>
+      </div>
       <a href="index.html">
         <button>Start your journey</button>
       </a>
     </section>
 
-    <!-- A form for getting students who are interested in joining -->
+    <!-- A form for getting students who are interested in joining
     <section id="form">
       <h2>Student Sign Up</h2>
       <p>Please fill in the form to express your interest in joining McTaba.</p>
-      <form>
+      <form>  -->
         <!-- Name -->
-        <label for="name">Enter your name: </label>
-        <input type="text" required placeholder="John Doe"><br>
+        <!-- <label for="name">Enter your name: </label>
+        <input type="text" required placeholder="John Doe"><br> -->
 
         <!-- Age -->
-        <label for="age">Age: </label>
-        <input type="number" min="16" max="99" required placeholder="18"><br>
+        <!-- <label for="age">Age: </label>
+        <input type="number" min="16" max="99" required placeholder="18"><br> -->
 
         <!-- Contact -->
-        <label for="email">Email: </label>
+        <!-- <label for="email">Email: </label>
         <input type="email" placeholder="johndoe@gmail.com" required><br>
 
         <label for="phone">Phone number: </label>
-        <input type="number" placeholder="0712345678" required><br>
+        <input type="number" placeholder="0712345678" required><br> -->
 
         <!-- occupation -->
-        <label for="occupation">What do you do: </label>
+        <!-- <label for="occupation">What do you do: </label>
         <select name="" id="">
           <option value="">Please choose an option</option>
           <option value="Student">Student</option>
           <option value="Part-time">Part-time worker</option>
           <option value="full-time">full-time worker</option>
           <option value="retired">Retired</option>
-        </select><br>
+        </select><br> -->
 
         <!-- submitting the form -->
-        <button type="submit">Sign-up</button>
-      </form>
-    </section>
+        <!-- <button type="submit">Sign-up</button> -->
+      <!-- </form> -->
+    <!-- </section> -->
 
   </main>
 </body>
