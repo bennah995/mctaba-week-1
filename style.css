@@ -12,11 +12,12 @@
 }
 
 body {
-  font-family: "Noto Sans Caucasian Albanian", sans-serif ;
+  /* font-family: "Noto Sans Caucasian Albanian", sans-serif ;
   font-weight: 400;
   font-style: normal;
   background-color: var(--bg-color);
-  color: var(--light-text);
+  color: var(--light-text); */
+  align-items: center;
 }
 
 img {
@@ -37,7 +38,11 @@ header {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-left: 8px;
+  background-color: rgb(9, 9, 72);
+  color: white;
 }
 
 .logo-area {
@@ -51,7 +56,8 @@ header {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 8px 10px rgba(84, 82, 82);
-  border: 1px solid rgb(37, 35, 35)
+  border: 1px solid rgb(37, 35, 35);
+  margin-top: 8px;
 }
 
 .nav {
@@ -64,22 +70,32 @@ header {
 
 .nav a {
   font-size: 15px;
-  color: rgb(67, 67, 166);
+  color: white;
   padding: 10px 12px;
   border-radius: 12px;
 }
 
 .nav a:hover{
   color: aqua;
-  background-color: antiquewhite;
+  background-color: rgb(96, 96, 96);
   border: 1px solid black;
 }
 
 section {
-  max-width: 810px;
+  margin: 0;
+  padding: 0;
+}
+
+#hero-section {
+  max-width: 100%;
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  padding: 24px;
+  background-color: rgb(9, 9, 72);
+  margin-bottom: 40px;
 }
 
 #hero-title {
@@ -87,14 +103,16 @@ section {
   line-height: 1.05;
   letter-spacing: -0.02rem;
   font-weight: 800;
+  color: white;
 }
 
 #highlight {
-  color: blue;
+  color: rgb(0, 0, 255);
 }
 
 .hero-para {
   font-size: 20px;
+  color: white;
 }
 
 .hero-image {
@@ -106,19 +124,40 @@ button{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 15px;
+  padding: 12px 16px;
   border-radius: 12px;
   border: 1px solid rgb(142, 142,246);
-  background: rgb(142, 142,246);
-  color: antiquewhite;
+  background: rgb(33, 33, 198);
+  color: white;
+  margin: 8px;
+}
+
+button:hover {
+  color: aqua;
+  background-color: rgba(87, 63, 210, 0.414);
+  border: 1px solid black;
+}
+
+button:active {
+  color: rgb(39, 213, 79);
 }
 
 .hero-list {
   display: inline-flex;
   display: flex;
-  list-style: none;
-  gap: 1rem;
-  color: green;
+  /* list-style: none; */
+  gap: 2rem;
+  color: white;
+  margin-top: 8px;
+  margin-left: 24px;
+}
+
+.hero-left {
+  max-width: 45%;
+}
+
+.hero-right {
+  max-width: 25%;
 }
 
 /* media query */
@@ -133,10 +172,9 @@ button{
 }
 
 .section-1{
-  max-width: 810px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+  max-width: 950px;
+  margin-left: 200px;
+  background-color: rgb(0, 0, 0);
 }
   
 article {
@@ -145,17 +183,23 @@ article {
   padding: 16px;
   min-height: 150px;
   margin-top: 4px;
+  width: 200px;
+  height: 250px;
 }
 
 .section-head {
   max-width: 810px;
+  align-items: center;
+  margin-left: 200px;
+  text-align: center;
 }
 
 .article-room {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 3rem;
+  margin: 2rem 8rem;
 }
 
 #step-4 {
@@ -164,4 +208,8 @@ article {
 
 #step-5 {
   grid-row-start: 2;
+}
+
+.section-1 a {
+  color: white;
 }
