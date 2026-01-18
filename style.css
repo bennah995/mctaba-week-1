@@ -249,6 +249,12 @@ article p{
   margin-top: 12px;
 }
 
+article:hover {
+  h3, a{
+  color:rgba(0, 0, 255, 0.714);
+
+  }
+}
 
 /* media query */
 @media (max-width : 720px){
