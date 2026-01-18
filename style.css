@@ -18,6 +18,8 @@ body {
   background-color: var(--bg-color);
   color: var(--light-text); */
   align-items: center;
+  background-color: aliceblue;
+
 }
 
 
@@ -100,7 +102,6 @@ section {
 
   width: 100%;
   margin: 0 auto;
-  /* margin-bottom: 40px; */
 
 }
 
@@ -141,12 +142,12 @@ button{
 
 button:hover {
   color: aqua;
-  background-color: rgba(87, 63, 210, 0.414);
+  /* background-color: rgba(87, 63, 210, 0.414); */
   border: 1px solid black;
 }
 
 button:active {
-  color: rgb(39, 213, 79);
+  color: rgb(5, 255, 63);
 }
 
 .hero-list {
@@ -177,7 +178,7 @@ button:active {
   margin: 0 auto;
   width: 100%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 40px 0;
   
 }
   
@@ -200,16 +201,19 @@ article {
   padding: 16px;
   min-height: 150px;
   margin-top: 4px;
-  width: 200px;
-  height: 250px;
+  width: (50% * rem);
+  height: auto;
   margin: 0 auto;
 }
 
+article p{
+  padding: 12px 0;
+}
+
 .section-head {
-  max-width: 100%;
+  margin: 0 auto;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
 }
 
 .article-room {
@@ -242,7 +246,7 @@ article {
 .startJourney {
   display: flex;
   justify-content: center;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 
@@ -271,6 +275,9 @@ article {
 
   article {
     flex-direction: column;
+    width: 350%;
+    margin: 0 auto;
+    height: auto;
   }
 
   .article-room {
