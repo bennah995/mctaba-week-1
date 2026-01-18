@@ -252,8 +252,8 @@ article p{
 article:hover {
   h3, a{
   color:rgba(0, 0, 255, 0.714);
-
   }
+  background-color: rgba(255, 255, 255, 0.484);
 }
 
 /* media query */
